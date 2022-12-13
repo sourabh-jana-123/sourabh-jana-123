@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<title>EJS Is Fun</title>
+
+<!-- CSS (load bootstrap from a CDN) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        padding-top: 50px;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    form {
+        border: 2px solid grey;
+        padding: 1rem 2rem;
+        margin: auto;
+        width: 20rem;
+    }
+
+    form>div {
+        margin: 1rem;
+    }
+
+    label {
+        margin: 0;
+        font-size: small;
+    }
+</style>
+
+<body>
+    <h1>Login</h1>
+    <form action="/login" method="post">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        <div class="btns">
+            <button type="submit">Login</button>
+            <a href="/register">Register</a>
+        </div>
+    </form>
+</body>
